@@ -23,7 +23,7 @@ public class WeatherLogic {
     }
 
     public static String getWeather(String message, WeatherInfo info) throws IOException {
-        URL url = new URL( WEATHER_API_BEGIN + message + WEATHER_API_END);
+        URL url = new URL(WEATHER_API_BEGIN + message + WEATHER_API_END);
 
         Scanner in = new Scanner((InputStream) url.getContent());
         String result = "";
